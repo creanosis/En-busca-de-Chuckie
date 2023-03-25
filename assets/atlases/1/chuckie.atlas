@@ -1,0 +1,111 @@
+
+chuckie.png
+size: 3209, 2270
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+stand.left_rojo
+  rotate: false
+  xy: 2, 1136
+  size: 533, 1132
+  orig: 800, 1150
+  offset: 170, 0
+  index: -1
+talk.left_rojo
+  rotate: false
+  xy: 2, 1136
+  size: 533, 1132
+  orig: 800, 1150
+  offset: 170, 0
+  index: 3
+stand.right
+  rotate: false
+  xy: 2, 2
+  size: 533, 1132
+  orig: 800, 1150
+  offset: 97, 0
+  index: -1
+talk.right
+  rotate: false
+  xy: 2, 2
+  size: 533, 1132
+  orig: 800, 1150
+  offset: 97, 0
+  index: 3
+talk.right
+  rotate: false
+  xy: 2, 2
+  size: 533, 1132
+  orig: 800, 1150
+  offset: 97, 0
+  index: 1
+stand.right_rojo
+  rotate: false
+  xy: 537, 1136
+  size: 533, 1132
+  orig: 800, 1150
+  offset: 97, 0
+  index: -1
+talk.left_rojo
+  rotate: false
+  xy: 537, 2
+  size: 533, 1132
+  orig: 800, 1150
+  offset: 170, 0
+  index: 1
+talk.left_rojo
+  rotate: false
+  xy: 1607, 1136
+  size: 532, 1132
+  orig: 800, 1150
+  offset: 170, 0
+  index: 0
+talk.left_rojo
+  rotate: false
+  xy: 1607, 2
+  size: 532, 1132
+  orig: 800, 1150
+  offset: 170, 0
+  index: 2
+talk.right
+  rotate: false
+  xy: 2141, 1136
+  size: 532, 1132
+  orig: 800, 1150
+  offset: 98, 0
+  index: 0
+talk.right
+  rotate: false
+  xy: 2141, 1136
+  size: 532, 1132
+  orig: 800, 1150
+  offset: 98, 0
+  index: 2
+talk.right_rojo
+  rotate: false
+  xy: 1072, 1136
+  size: 533, 1132
+  orig: 800, 1150
+  offset: 97, 0
+  index: 1
+talk.right_rojo
+  rotate: false
+  xy: 1072, 2
+  size: 533, 1132
+  orig: 800, 1150
+  offset: 97, 0
+  index: 3
+talk.right_rojo
+  rotate: false
+  xy: 2141, 2
+  size: 532, 1132
+  orig: 800, 1150
+  offset: 98, 0
+  index: 0
+talk.right_rojo
+  rotate: false
+  xy: 2675, 1136
+  size: 532, 1132
+  orig: 800, 1150
+  offset: 98, 0
+  index: 2

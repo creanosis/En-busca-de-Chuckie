@@ -1,0 +1,27 @@
+
+tentaculomorado.png
+size: 101, 57
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+stand.left
+  rotate: false
+  xy: 2, 2
+  size: 31, 53
+  orig: 31, 53
+  offset: 0, 0
+  index: -1
+talk.left
+  rotate: false
+  xy: 35, 2
+  size: 31, 53
+  orig: 31, 53
+  offset: 0, 0
+  index: 0
+talk.left
+  rotate: false
+  xy: 68, 2
+  size: 31, 53
+  orig: 31, 53
+  offset: 0, 0
+  index: 1

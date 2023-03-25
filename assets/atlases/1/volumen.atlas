@@ -1,0 +1,20 @@
+
+volumen.png
+size: 304, 696
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+stand.left
+  rotate: false
+  xy: 2, 2
+  size: 299, 273
+  orig: 300, 273
+  offset: 0, 0
+  index: 0
+walk.left
+  rotate: false
+  xy: 2, 277
+  size: 300, 417
+  orig: 300, 417
+  offset: 0, 0
+  index: 0

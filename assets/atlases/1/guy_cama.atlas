@@ -1,0 +1,13 @@
+
+guy_cama.png
+size: 36, 30
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+guy_levantandose
+  rotate: false
+  xy: 2, 2
+  size: 32, 26
+  orig: 38, 37
+  offset: 6, 0
+  index: -1

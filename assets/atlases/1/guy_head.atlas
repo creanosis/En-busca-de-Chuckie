@@ -1,0 +1,55 @@
+
+guy_head.png
+size: 44, 46
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+stand.front
+  rotate: false
+  xy: 24, 31
+  size: 18, 13
+  orig: 20, 15
+  offset: 0, 0
+  index: -1
+talk.front
+  rotate: false
+  xy: 24, 31
+  size: 18, 13
+  orig: 20, 15
+  offset: 0, 0
+  index: 0
+talk.front
+  rotate: false
+  xy: 2, 29
+  size: 20, 15
+  orig: 20, 15
+  offset: 0, 0
+  index: 5
+talk.front
+  rotate: false
+  xy: 24, 17
+  size: 18, 12
+  orig: 20, 15
+  offset: 2, 2
+  index: 1
+talk.front
+  rotate: false
+  xy: 2, 15
+  size: 18, 12
+  orig: 20, 15
+  offset: 0, 2
+  index: 2
+talk.front
+  rotate: false
+  xy: 22, 2
+  size: 16, 13
+  orig: 20, 15
+  offset: 2, 0
+  index: 4
+talk.front
+  rotate: false
+  xy: 2, 2
+  size: 16, 11
+  orig: 20, 15
+  offset: 2, 2
+  index: 3

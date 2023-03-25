@@ -1,0 +1,20 @@
+
+mkdos.png
+size: 1924, 1097
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+guy_tumbado
+  rotate: false
+  xy: 2, 2
+  size: 62, 11
+  orig: 72, 50
+  offset: 0, 5
+  index: -1
+mk2final_room
+  rotate: false
+  xy: 2, 15
+  size: 1920, 1080
+  orig: 1920, 1080
+  offset: 0, 0
+  index: -1

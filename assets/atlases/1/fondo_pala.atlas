@@ -1,0 +1,20 @@
+
+fondo_pala.png
+size: 3208, 1387
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+almacen
+  rotate: false
+  xy: 2, 305
+  size: 3200, 1080
+  orig: 3200, 1080
+  offset: 0, 0
+  index: -1
+cajas_frente
+  rotate: false
+  xy: 2, 2
+  size: 3204, 301
+  orig: 3204, 301
+  offset: 0, 0
+  index: -1

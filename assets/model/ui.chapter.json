@@ -1,0 +1,823 @@
+{
+bladeEngineVersion: "4.1.0",
+sounds: {},
+scenes: {
+	menu: {
+		id: "menu",
+		layers: [
+			{
+				name: "foreground"
+			},
+			{
+				name: "dynamic",
+				dynamic: true
+			},
+			{
+				name: "background"
+			}
+		],
+		actors: {
+			cargarguardar: {
+				class: "SpriteActor",
+				id: "cargarguardar",
+				bbox: [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+				pos: {
+					x: 967.2324,
+					y: 331.0937
+				},
+				visible: true,
+				refPoint: {},
+				verbs: {
+					"pointer-exit": {
+						id: "pointer-exit",
+						actions: [
+							{
+								class: "SetActorAttr",
+								actor: "menu#cargarguardar",
+								tint: "ffffffff"
+							}
+						]
+					},
+					action: {
+						id: "action",
+						actions: [
+							{
+								class: "com.bladecoder.engine.actions.ui.UILoadGameScreen"
+							}
+						]
+					},
+					"pointer-enter": {
+						id: "pointer-enter",
+						actions: [
+							{
+								class: "SetActorAttr",
+								actor: "menu#cargarguardar",
+								tint: "cddb65ff"
+							}
+						]
+					}
+				},
+				interaction: true,
+				zIndex: 0,
+				layer: "foreground",
+				renderer: {
+					class: "TextRenderer",
+					text: "@menu.cargarguardar.text",
+					fontName: "MonkeyIsland",
+					fontSize: 50,
+					borderWidth: 0,
+					borderColor: {
+						a: 1
+					},
+					borderStraight: true,
+					shadowOffsetX: 0,
+					shadowOffsetY: 0,
+					shadowColor: {
+						a: 1
+					},
+					align: 8,
+					orgAlign: 4
+				},
+				scaleX: 1,
+				scaleY: 1,
+				rot: 2.8704357,
+				fakeDepth: false,
+				bboxFromRenderer: true
+			},
+			continuar: {
+				class: "SpriteActor",
+				id: "continuar",
+				bbox: [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+				pos: {
+					x: 936.1101,
+					y: 643.2394
+				},
+				visible: true,
+				refPoint: {},
+				verbs: {
+					"pointer-exit": {
+						id: "pointer-exit",
+						actions: [
+							{
+								class: "SetActorAttr",
+								actor: "menu#continuar",
+								tint: "ffffffff"
+							}
+						]
+					},
+					action: {
+						id: "action",
+						actions: [
+							{
+								class: "com.bladecoder.engine.actions.ui.UIContinue"
+							}
+						]
+					},
+					"pointer-enter": {
+						id: "pointer-enter",
+						actions: [
+							{
+								class: "SetActorAttr",
+								actor: "menu#continuar",
+								tint: "cddb65ff"
+							}
+						]
+					}
+				},
+				interaction: true,
+				zIndex: 0,
+				layer: "foreground",
+				renderer: {
+					class: "TextRenderer",
+					text: "@menu.continuar.text",
+					fontName: "MonkeyIsland",
+					fontSize: 50,
+					borderWidth: 0,
+					borderColor: {
+						a: 1
+					},
+					borderStraight: true,
+					shadowOffsetX: 0,
+					shadowOffsetY: 0,
+					shadowColor: {
+						a: 1
+					},
+					align: 8,
+					orgAlign: 4
+				},
+				scaleX: 1,
+				scaleY: 1,
+				rot: 1.7848357,
+				fakeDepth: false,
+				bboxFromRenderer: true
+			},
+			cuadro: {
+				class: "SpriteActor",
+				id: "cuadro",
+				bbox: [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+				pos: {
+					x: 977.9147,
+					y: 424.5849
+				},
+				visible: false,
+				refPoint: {},
+				verbs: {},
+				interaction: false,
+				zIndex: 0,
+				layer: "foreground",
+				renderer: {
+					class: "AtlasRenderer",
+					fanims: {
+						cuadro: {
+							class: "AtlasAnimationDesc",
+							id: "cuadro",
+							source: "menu",
+							duration: 1,
+							animationType: "NO_REPEAT",
+							count: -1,
+							preload: true
+						}
+					},
+					initAnimation: "cuadro",
+					orgAlign: 4
+				},
+				scaleX: 1.3827481,
+				scaleY: 1.1098925,
+				rot: 1.638914,
+				fakeDepth: false,
+				bboxFromRenderer: true
+			},
+			nuevapartida: {
+				class: "SpriteActor",
+				id: "nuevapartida",
+				bbox: [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+				pos: {
+					x: 950.13635,
+					y: 501.0938
+				},
+				visible: true,
+				refPoint: {},
+				verbs: {
+					"pointer-exit": {
+						id: "pointer-exit",
+						actions: [
+							{
+								class: "SetActorAttr",
+								actor: "menu#nuevapartida",
+								tint: "ffffffff"
+							}
+						]
+					},
+					action: {
+						id: "action",
+						actions: [
+							{
+								class: "com.bladecoder.engine.actions.ui.UIIfShowContinue",
+								caID: "867856089"
+							},
+							{
+								class: "com.bladecoder.engine.actions.ui.UINewGame"
+							},
+							{
+								class: "End",
+								caID: "867856089"
+							},
+							{
+								class: "SetActorAttr",
+								actor: "menu#cuadro",
+								visible: true,
+								interaction: false,
+								zIndex: 2
+							},
+							{
+								class: "SetActorAttr",
+								actor: "menu#texto_nuevo",
+								visible: true,
+								interaction: false,
+								zIndex: 2
+							},
+							{
+								class: "SetActorAttr",
+								actor: "menu#texto_nuevo_2",
+								visible: true,
+								interaction: false,
+								zIndex: 2
+							},
+							{
+								class: "SetActorAttr",
+								actor: "menu#texto_nuevo_SI",
+								visible: true,
+								interaction: true,
+								zIndex: 2
+							},
+							{
+								class: "SetActorAttr",
+								actor: "menu#texto_nuevo_NO",
+								visible: true,
+								interaction: true,
+								zIndex: 2
+							},
+							{
+								class: "Comment",
+								comment: "sin interaccion menu",
+								debug: false
+							},
+							{
+								class: "SetActorAttr",
+								actor: "menu#continuar",
+								interaction: false
+							},
+							{
+								class: "SetActorAttr",
+								actor: "menu#cargarguardar",
+								interaction: false
+							},
+							{
+								class: "SetActorAttr",
+								actor: "menu#salir",
+								interaction: false
+							},
+							{
+								class: "SetActorAttr",
+								actor: "menu#nuevapartida",
+								interaction: false
+							},
+							{
+								class: "End",
+								caID: "867856089"
+							}
+						]
+					},
+					"pointer-enter": {
+						id: "pointer-enter",
+						actions: [
+							{
+								class: "SetActorAttr",
+								actor: "menu#nuevapartida",
+								tint: "cddb65ff"
+							}
+						]
+					}
+				},
+				interaction: true,
+				zIndex: 0,
+				layer: "foreground",
+				renderer: {
+					class: "TextRenderer",
+					text: "@menu.nuevapartida.text1",
+					fontName: "MonkeyIsland",
+					fontSize: 50,
+					borderWidth: 0,
+					borderColor: {
+						a: 1
+					},
+					borderStraight: true,
+					shadowOffsetX: 0,
+					shadowOffsetY: 0,
+					shadowColor: {
+						a: 1
+					},
+					align: 8,
+					orgAlign: 4
+				},
+				scaleX: 1,
+				scaleY: 1,
+				rot: 2.103469,
+				fakeDepth: false,
+				bboxFromRenderer: true
+			},
+			redstone: {
+				class: "SpriteActor",
+				id: "redstone",
+				bbox: [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+				pos: {
+					x: 1277.8207,
+					y: 123.18555
+				},
+				visible: true,
+				refPoint: {},
+				verbs: {},
+				interaction: false,
+				zIndex: 0,
+				layer: "foreground",
+				renderer: {
+					class: "TextRenderer",
+					text: "@menu.redstone.text2",
+					fontName: "MonkeyIsland",
+					fontSize: 15,
+					borderWidth: 0,
+					borderColor: {
+						a: 1
+					},
+					borderStraight: true,
+					shadowOffsetX: 0,
+					shadowOffsetY: 0,
+					shadowColor: {
+						a: 1
+					},
+					align: 8,
+					orgAlign: 4
+				},
+				scaleX: 1,
+				scaleY: 1,
+				rot: 0.24381053,
+				fakeDepth: false,
+				bboxFromRenderer: true
+			},
+			salir: {
+				class: "SpriteActor",
+				id: "salir",
+				bbox: [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+				pos: {
+					x: 936.37427,
+					y: 181.81842
+				},
+				visible: true,
+				refPoint: {},
+				verbs: {
+					"pointer-exit": {
+						id: "pointer-exit",
+						actions: [
+							{
+								class: "SetActorAttr",
+								actor: "menu#salir",
+								tint: "ffffffff"
+							}
+						]
+					},
+					action: {
+						id: "action",
+						actions: [
+							{
+								class: "com.bladecoder.engine.actions.ui.UIExit"
+							}
+						]
+					},
+					"pointer-enter": {
+						id: "pointer-enter",
+						actions: [
+							{
+								class: "SetActorAttr",
+								actor: "menu#salir",
+								tint: "cddb65ff"
+							}
+						]
+					}
+				},
+				interaction: true,
+				zIndex: 0,
+				layer: "foreground",
+				renderer: {
+					class: "TextRenderer",
+					text: "@menu.salir.text",
+					fontName: "MonkeyIsland",
+					fontSize: 50,
+					borderWidth: 0,
+					borderColor: {
+						a: 1
+					},
+					borderStraight: true,
+					shadowOffsetX: 0,
+					shadowOffsetY: 0,
+					shadowColor: {
+						a: 1
+					},
+					align: 8,
+					orgAlign: 4
+				},
+				scaleX: 1,
+				scaleY: 1,
+				rot: 2.515421,
+				fakeDepth: false,
+				bboxFromRenderer: true
+			},
+			texto_nuevo: {
+				class: "SpriteActor",
+				id: "texto_nuevo",
+				bbox: [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+				pos: {
+					x: 941.7564,
+					y: 545.08374
+				},
+				visible: false,
+				refPoint: {},
+				verbs: {},
+				interaction: false,
+				zIndex: 2,
+				layer: "foreground",
+				renderer: {
+					class: "TextRenderer",
+					text: "@menu.texto_nuevo.text1",
+					fontName: "MonkeyIsland",
+					fontSize: 25,
+					borderWidth: 0,
+					borderColor: {
+						a: 1
+					},
+					borderStraight: true,
+					shadowOffsetX: 0,
+					shadowOffsetY: 0,
+					shadowColor: {
+						a: 1
+					},
+					align: 8,
+					orgAlign: 4
+				},
+				scaleX: 1,
+				scaleY: 1,
+				rot: 1.8642029,
+				fakeDepth: false,
+				bboxFromRenderer: true
+			},
+			texto_nuevo_2: {
+				class: "SpriteActor",
+				id: "texto_nuevo_2",
+				bbox: [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+				pos: {
+					x: 950.796,
+					y: 509.88593
+				},
+				visible: false,
+				refPoint: {},
+				verbs: {},
+				interaction: false,
+				zIndex: 2,
+				layer: "foreground",
+				renderer: {
+					class: "TextRenderer",
+					text: "@menu.texto_nuevo_2.text",
+					fontName: "MonkeyIsland",
+					fontSize: 25,
+					borderWidth: 0,
+					borderColor: {
+						a: 1
+					},
+					borderStraight: true,
+					shadowOffsetX: 0,
+					shadowOffsetY: 0,
+					shadowColor: {
+						a: 1
+					},
+					align: 8,
+					orgAlign: 4
+				},
+				scaleX: 1,
+				scaleY: 1,
+				rot: 2.1007931,
+				fakeDepth: false,
+				bboxFromRenderer: true
+			},
+			texto_nuevo_NO: {
+				class: "SpriteActor",
+				id: "texto_nuevo_NO",
+				bbox: [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+				pos: {
+					x: 982.13324,
+					y: 468.90652
+				},
+				visible: false,
+				refPoint: {},
+				verbs: {
+					"pointer-exit": {
+						id: "pointer-exit",
+						actions: [
+							{
+								class: "SetActorAttr",
+								actor: "menu#texto_nuevo_NO",
+								tint: "ffffffff"
+							}
+						]
+					},
+					action: {
+						id: "action",
+						actions: [
+							{
+								class: "SetActorAttr",
+								actor: "menu#cuadro",
+								visible: false,
+								interaction: false
+							},
+							{
+								class: "SetActorAttr",
+								actor: "menu#texto_nuevo",
+								visible: false,
+								interaction: false
+							},
+							{
+								class: "SetActorAttr",
+								actor: "menu#texto_nuevo_2",
+								visible: false,
+								interaction: false
+							},
+							{
+								class: "SetActorAttr",
+								actor: "menu#texto_nuevo_SI",
+								visible: false,
+								interaction: false
+							},
+							{
+								class: "SetActorAttr",
+								actor: "menu#texto_nuevo_NO",
+								visible: false,
+								interaction: false
+							},
+							{
+								class: "Comment",
+								comment: "sin interaccion menu",
+								debug: false
+							},
+							{
+								class: "SetActorAttr",
+								actor: "menu#continuar",
+								interaction: true
+							},
+							{
+								class: "SetActorAttr",
+								actor: "menu#cargarguardar",
+								interaction: true
+							},
+							{
+								class: "SetActorAttr",
+								actor: "menu#salir",
+								interaction: true
+							},
+							{
+								class: "SetActorAttr",
+								actor: "menu#nuevapartida",
+								interaction: true
+							}
+						]
+					},
+					"pointer-enter": {
+						id: "pointer-enter",
+						actions: [
+							{
+								class: "SetActorAttr",
+								actor: "menu#texto_nuevo_NO",
+								tint: "cddb65ff"
+							}
+						]
+					}
+				},
+				interaction: true,
+				zIndex: 2,
+				layer: "foreground",
+				renderer: {
+					class: "TextRenderer",
+					text: "@menu.texto_nuevo_NO.text",
+					fontName: "MonkeyIsland",
+					fontSize: 25,
+					borderWidth: 0,
+					borderColor: {
+						a: 1
+					},
+					borderStraight: true,
+					shadowOffsetX: 0,
+					shadowOffsetY: 0,
+					shadowColor: {
+						a: 1
+					},
+					align: 8,
+					orgAlign: 4
+				},
+				scaleX: 1,
+				scaleY: 1,
+				rot: 4.1876354,
+				fakeDepth: false,
+				bboxFromRenderer: true
+			},
+			texto_nuevo_SI: {
+				class: "SpriteActor",
+				id: "texto_nuevo_SI",
+				bbox: [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+				pos: {
+					x: 895.3535,
+					y: 465.2908
+				},
+				visible: false,
+				refPoint: {},
+				verbs: {
+					"pointer-exit": {
+						id: "pointer-exit",
+						actions: [
+							{
+								class: "SetActorAttr",
+								actor: "menu#texto_nuevo_SI",
+								tint: "ffffffff"
+							}
+						]
+					},
+					action: {
+						id: "action",
+						actions: [
+							{
+								class: "com.bladecoder.engine.actions.ui.UINewGame"
+							}
+						]
+					},
+					"pointer-enter": {
+						id: "pointer-enter",
+						actions: [
+							{
+								class: "SetActorAttr",
+								actor: "menu#texto_nuevo_SI",
+								tint: "cddb65ff"
+							}
+						]
+					}
+				},
+				interaction: true,
+				zIndex: 2,
+				layer: "foreground",
+				renderer: {
+					class: "TextRenderer",
+					text: "@menu.texto_nuevo_SI.text",
+					fontName: "MonkeyIsland",
+					fontSize: 25,
+					borderWidth: 0,
+					borderColor: {
+						a: 1
+					},
+					borderStraight: true,
+					shadowOffsetX: 0,
+					shadowOffsetY: 0,
+					shadowColor: {
+						a: 1
+					},
+					align: 8,
+					orgAlign: 4
+				},
+				scaleX: 1,
+				scaleY: 1,
+				rot: 2.6196218,
+				fakeDepth: false,
+				bboxFromRenderer: true
+			},
+			version: {
+				class: "SpriteActor",
+				id: "version",
+				bbox: [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+				pos: {
+					x: 760.32086,
+					y: 125.5838
+				},
+				visible: true,
+				refPoint: {},
+				verbs: {},
+				interaction: false,
+				zIndex: 0,
+				layer: "foreground",
+				renderer: {
+					class: "TextRenderer",
+					text: "@menu.version.text1",
+					fontName: "MonkeyIsland",
+					fontSize: 15,
+					borderWidth: 0,
+					borderColor: {
+						a: 1
+					},
+					borderStraight: true,
+					shadowOffsetX: 0,
+					shadowOffsetY: 0,
+					shadowColor: {
+						a: 1
+					},
+					align: 8,
+					orgAlign: 4
+				},
+				scaleX: 1,
+				scaleY: 1,
+				rot: 0.97424453,
+				fakeDepth: false,
+				bboxFromRenderer: true
+			}
+		},
+		backgroundAtlas: "menu",
+		backgroundRegionId: "fondo_menu",
+		musicDesc: null,
+		verbs: {
+			init: {
+				id: "init",
+				actions: [
+					{
+						class: "ShowInventory",
+						value: false
+					},
+					{
+						class: "SetActorAttr",
+						actor: "menu#continuar",
+						visible: true,
+						interaction: true
+					},
+					{
+						class: "RunVerb",
+						verb: "continuar",
+						wait: true
+					},
+					{
+						class: "SetActorAttr",
+						actor: "menu#salir",
+						interaction: true
+					},
+					{
+						class: "SetActorAttr",
+						actor: "menu#cargarguardar",
+						interaction: true
+					},
+					{
+						class: "SetActorAttr",
+						actor: "menu#nuevapartida",
+						interaction: true
+					},
+					{
+						class: "Transition",
+						time: 1,
+						color: "000000ff",
+						type: "FADE_IN",
+						wait: true
+					},
+					{
+						class: "Property",
+						prop: "musica",
+						value: "on"
+					}
+				]
+			},
+			continuar: {
+				id: "continuar",
+				actions: [
+					{
+						class: "com.bladecoder.engine.actions.ui.UIIfShowContinue",
+						caID: "472368811"
+					},
+					{
+						class: "SetActorAttr",
+						actor: "menu#continuar",
+						interaction: false
+					},
+					{
+						class: "SetActorAttr",
+						actor: "menu#continuar",
+						tint: "423939ff"
+					},
+					{
+						class: "End",
+						caID: "472368811"
+					},
+					{
+						class: "SetActorAttr",
+						actor: "menu#continuar",
+						interaction: true
+					},
+					{
+						class: "End",
+						caID: "472368811"
+					}
+				]
+			}
+		},
+		walkZone: null
+	}
+},
+initScene: "menu"
+}

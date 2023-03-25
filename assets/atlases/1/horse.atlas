@@ -1,0 +1,34 @@
+
+horse.png
+size: 719, 194
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+armor_horse
+  rotate: false
+  xy: 588, 81
+  size: 129, 111
+  orig: 150, 124
+  offset: 12, 6
+  index: -1
+caja_abierta_con_idolo
+  rotate: false
+  xy: 2, 2
+  size: 193, 190
+  orig: 200, 192
+  offset: 0, 0
+  index: -1
+caja_abierta_sin_idolo
+  rotate: false
+  xy: 197, 2
+  size: 193, 190
+  orig: 200, 192
+  offset: 0, 0
+  index: -1
+caja_cerrada
+  rotate: false
+  xy: 392, 6
+  size: 194, 186
+  orig: 200, 192
+  offset: 0, 0
+  index: -1

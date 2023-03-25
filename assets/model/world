@@ -1,0 +1,501 @@
+{
+width: 1920,
+height: 1080,
+initChapter: "00",
+verbs: {
+	initNewGame: {
+		id: "initNewGame",
+		actions: []
+	},
+	use: {
+		id: "use",
+		actions: [
+			{
+				class: "Cutmode",
+				value: true
+			},
+			{
+				class: "Choose",
+				chooseCriteria: "RANDOM",
+				caID: "974746261"
+			},
+			{
+				class: "Say",
+				actor: "$PLAYER",
+				text: "@default.use.1.text",
+				type: "TALK",
+				queue: false,
+				wait: true
+			},
+			{
+				class: "Say",
+				actor: "$PLAYER",
+				text: "@default.use.2.text",
+				type: "TALK",
+				queue: false,
+				wait: true
+			},
+			{
+				class: "End",
+				caID: "974746261"
+			},
+			{
+				class: "Cutmode",
+				value: false
+			}
+		]
+	},
+	"stella-alfas": {
+		id: "stella-alfas",
+		actions: [
+			{
+				class: "Comment",
+				comment: "No hay ningun objeto puesto en puntos cardinales (S,N,E,O)",
+				debug: false
+			},
+			{
+				class: "Property",
+				prop: "todosalfa",
+				value: "alfa"
+			},
+			{
+				class: "Property",
+				prop: "todosdesaparecen",
+				value: "no-desaparecen"
+			},
+			{
+				class: "Property",
+				prop: "todoslibres",
+				value: "no-libres"
+			},
+			{
+				class: "Property",
+				prop: "chuckie-empujar",
+				value: "no-empujar"
+			},
+			{
+				class: "RunOnce",
+				caID: "166983998"
+			},
+			{
+				class: "Cutmode",
+				value: true
+			},
+			{
+				class: "Say",
+				actor: "guy_chico",
+				text: "@default.stella-alfas.5.text1",
+				type: "TALK",
+				queue: false,
+				wait: true
+			},
+			{
+				class: "Cutmode",
+				value: false
+			},
+			{
+				class: "End",
+				caID: "166983998"
+			}
+		]
+	},
+	lookat: {
+		id: "lookat",
+		actions: [
+			{
+				class: "Cutmode",
+				value: true
+			},
+			{
+				class: "Say",
+				actor: "$PLAYER",
+				text: "@default.lookat.1.text1",
+				type: "TALK",
+				queue: false,
+				wait: true
+			},
+			{
+				class: "Cutmode",
+				value: false
+			}
+		]
+	},
+	pickup: {
+		id: "pickup",
+		actions: [
+			{
+				class: "Cutmode",
+				value: true
+			},
+			{
+				class: "Choose",
+				chooseCriteria: "RANDOM",
+				caID: "478429933"
+			},
+			{
+				class: "Say",
+				actor: "$PLAYER",
+				text: "@default.pickup.1.text",
+				type: "TALK",
+				queue: false,
+				wait: true
+			},
+			{
+				class: "Say",
+				actor: "$PLAYER",
+				text: "@default.pickup.3.text",
+				type: "TALK",
+				queue: false,
+				wait: true
+			},
+			{
+				class: "Say",
+				actor: "$PLAYER",
+				text: "@default.pickup.4.text",
+				type: "TALK",
+				queue: false,
+				wait: true
+			},
+			{
+				class: "End",
+				caID: "478429933"
+			},
+			{
+				class: "Cutmode",
+				value: false
+			}
+		]
+	},
+	initSavedGame: {
+		id: "initSavedGame",
+		actions: []
+	},
+	"stella-desaparecen": {
+		id: "stella-desaparecen",
+		actions: [
+			{
+				class: "Property",
+				prop: "todosdesaparecen",
+				value: "desaparecen"
+			},
+			{
+				class: "Property",
+				prop: "todosalfa",
+				value: "no-alfa"
+			},
+			{
+				class: "Property",
+				prop: "todoslibres",
+				value: "no-libres"
+			},
+			{
+				class: "Property",
+				prop: "chuckie-empujar",
+				value: "no-empujar"
+			},
+			{
+				class: "RunOnce",
+				caID: "1471592876"
+			},
+			{
+				class: "Cutmode",
+				value: true
+			},
+			{
+				class: "Say",
+				actor: "guy_chico",
+				text: "@default.stella-desaparecen.5.text",
+				type: "TALK",
+				queue: false,
+				wait: true
+			},
+			{
+				class: "Say",
+				actor: "guy_chico",
+				text: "@default.stella-desaparecen.8.text",
+				type: "TALK",
+				queue: false,
+				wait: true
+			},
+			{
+				class: "Cutmode",
+				value: false
+			},
+			{
+				class: "End",
+				caID: "1471592876"
+			}
+		]
+	},
+	"stella-libres": {
+		id: "stella-libres",
+		actions: [
+			{
+				class: "Comment",
+				comment: "No hay ningun objeto puesto en puntos cardinales (S,N,E,O)",
+				debug: false
+			},
+			{
+				class: "Property",
+				prop: "todoslibres",
+				value: "libres"
+			},
+			{
+				class: "Property",
+				prop: "todosalfa",
+				value: "no-alfa"
+			},
+			{
+				class: "Property",
+				prop: "todosdesaparecen",
+				value: "no-desaparecen"
+			},
+			{
+				class: "Property",
+				prop: "chuckie-empujar",
+				value: "no-empujar"
+			},
+			{
+				class: "RunOnce",
+				caID: "1384837695"
+			},
+			{
+				class: "Cutmode",
+				value: true
+			},
+			{
+				class: "Say",
+				actor: "guy_chico",
+				text: "@default.stella-libres.5.text",
+				type: "TALK",
+				queue: false,
+				wait: true
+			},
+			{
+				class: "Cutmode",
+				value: false
+			},
+			{
+				class: "End",
+				caID: "1384837695"
+			}
+		]
+	},
+	dialog: {
+		id: "dialog",
+		actions: [
+			{
+				class: "Cutmode",
+				value: true
+			},
+			{
+				class: "SayDialog",
+				wait: true
+			},
+			{
+				class: "Cutmode",
+				value: false
+			}
+		]
+	},
+	volumenon: {
+		id: "volumenon",
+		actions: [
+			{
+				class: "com.bladecoder.engine.actions.ui.UISetSystemPref",
+				system: "MUSIC_VOLUME",
+				value: "1.0"
+			},
+			{
+				class: "Animation",
+				animation: "musicaonoff#stand.left",
+				count: -1,
+				wait: true,
+				repeat: "SPRITE_DEFINED",
+				keepDirection: false
+			}
+		]
+	},
+	"stella-empujar": {
+		id: "stella-empujar",
+		actions: [
+			{
+				class: "Comment",
+				comment: "No hay ningun objeto puesto en puntos cardinales (S,N,E,O)",
+				debug: false
+			},
+			{
+				class: "Property",
+				prop: "chuckie-empujar",
+				value: "empujar"
+			},
+			{
+				class: "Property",
+				prop: "todoslibres",
+				value: "no-libres"
+			},
+			{
+				class: "Property",
+				prop: "todosalfa",
+				value: "no-alfa"
+			},
+			{
+				class: "Property",
+				prop: "todosdesaparecen",
+				value: "no-desaparecen"
+			},
+			{
+				class: "RunOnce",
+				caID: "1310599451"
+			},
+			{
+				class: "Cutmode",
+				value: true
+			},
+			{
+				class: "Say",
+				actor: "guy_chico",
+				text: "@default.stella-empujar.5.text",
+				type: "TALK",
+				queue: false,
+				wait: true
+			},
+			{
+				class: "Cutmode",
+				value: false
+			},
+			{
+				class: "End",
+				caID: "1310599451"
+			}
+		]
+	},
+	volumenoff: {
+		id: "volumenoff",
+		actions: [
+			{
+				class: "com.bladecoder.engine.actions.ui.UISetSystemPref",
+				system: "MUSIC_VOLUME",
+				value: "0.0"
+			},
+			{
+				class: "Animation",
+				animation: "musicaonoff#walk.left",
+				count: -1,
+				wait: true,
+				repeat: "SPRITE_DEFINED",
+				keepDirection: false
+			}
+		]
+	},
+	volver: {
+		id: "volver",
+		actions: [
+			{
+				class: "ShowInventory",
+				value: true
+			},
+			{
+				class: "com.bladecoder.engine.actions.ui.MenuButtonVisibility",
+				visible: true
+			},
+			{
+				class: "Property",
+				prop: "papel",
+				value: "visto"
+			},
+			{
+				class: "IfProperty",
+				name: "papelprimeravez",
+				value: "si",
+				caID: "337932053"
+			},
+			{
+				class: "Cutmode",
+				value: true
+			},
+			{
+				class: "Say",
+				actor: "guy_chico",
+				text: "@default.volver.6.text",
+				type: "TALK",
+				queue: false,
+				wait: true
+			},
+			{
+				class: "Say",
+				actor: "guy_chico",
+				text: "@default.volver.7.text",
+				type: "TALK",
+				queue: false,
+				wait: true
+			},
+			{
+				class: "Wait",
+				time: 0.5
+			},
+			{
+				class: "Say",
+				actor: "guy_chico",
+				text: "@default.volver.9.text",
+				type: "TALK",
+				queue: false,
+				wait: true
+			},
+			{
+				class: "Say",
+				actor: "guy_chico",
+				text: "@default.volver.10.text",
+				type: "TALK",
+				queue: false,
+				wait: true
+			},
+			{
+				class: "Say",
+				actor: "guy_chico",
+				text: "@default.volver.11.text",
+				type: "TALK",
+				queue: false,
+				wait: true
+			},
+			{
+				class: "Wait",
+				time: 0.5
+			},
+			{
+				class: "Say",
+				actor: "guy_chico",
+				text: "@default.volver.13.text",
+				type: "TALK",
+				queue: false,
+				wait: true
+			},
+			{
+				class: "Say",
+				actor: "guy_chico",
+				text: "@default.volver.14.text",
+				type: "TALK",
+				queue: false,
+				wait: true
+			},
+			{
+				class: "Cutmode",
+				value: false
+			},
+			{
+				class: "Property",
+				prop: "papelprimeravez",
+				value: "no"
+			},
+			{
+				class: "End",
+				caID: "337932053"
+			},
+			{
+				class: "End",
+				caID: "337932053"
+			}
+		]
+	}
+}
+}

@@ -1,0 +1,20 @@
+
+habitacion_cama.png
+size: 636, 373
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+cama_deshecha
+  rotate: false
+  xy: 2, 2
+  size: 611, 369
+  orig: 615, 371
+  offset: 4, 0
+  index: -1
+guy_asustado
+  rotate: false
+  xy: 615, 357
+  size: 19, 14
+  orig: 19, 14
+  offset: 0, 0
+  index: -1

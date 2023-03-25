@@ -1,0 +1,20 @@
+
+monocreditos.png
+size: 185,312
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+stand
+  rotate: false
+  xy: 2, 2
+  size: 181, 308
+  orig: 181, 317
+  offset: 0, 7
+  index: -1
+talk
+  rotate: false
+  xy: 2, 2
+  size: 181, 308
+  orig: 181, 317
+  offset: 0, 7
+  index: -1

@@ -1,0 +1,27 @@
+
+tinte.png
+size: 3846, 2166
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+amarillo
+  rotate: false
+  xy: 2, 1084
+  size: 1920, 1080
+  orig: 1920, 1080
+  offset: 0, 0
+  index: -1
+rojo
+  rotate: false
+  xy: 2, 2
+  size: 1920, 1080
+  orig: 1920, 1080
+  offset: 0, 0
+  index: -1
+verde
+  rotate: false
+  xy: 1924, 1084
+  size: 1920, 1080
+  orig: 1920, 1080
+  offset: 0, 0
+  index: -1

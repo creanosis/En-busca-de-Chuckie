@@ -1,0 +1,20 @@
+
+mapa.png
+size: 3304, 1388
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+casas
+  rotate: false
+  xy: 2, 2
+  size: 2863, 302
+  orig: 2863, 302
+  offset: 0, 0
+  index: -1
+mapa
+  rotate: false
+  xy: 2, 306
+  size: 3300, 1080
+  orig: 3300, 1080
+  offset: 0, 0
+  index: -1

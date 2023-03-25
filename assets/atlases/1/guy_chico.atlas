@@ -1,0 +1,90 @@
+
+guy_chico.png
+size: 3687, 2208
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+stand.right
+  rotate: false
+  xy: 1532, 2
+  size: 508, 1099
+  orig: 800, 1150
+  offset: 143, 34
+  index: -1
+talk.right
+  rotate: false
+  xy: 2, 1097
+  size: 508, 1109
+  orig: 800, 1150
+  offset: 143, 34
+  index: 2
+talk.right
+  rotate: false
+  xy: 512, 1098
+  size: 508, 1108
+  orig: 800, 1150
+  offset: 143, 34
+  index: 0
+talk.right
+  rotate: false
+  xy: 1022, 1101
+  size: 508, 1105
+  orig: 800, 1150
+  offset: 143, 34
+  index: 1
+talk.right
+  rotate: false
+  xy: 1532, 1103
+  size: 508, 1103
+  orig: 800, 1150
+  offset: 143, 34
+  index: 3
+talk.right
+  rotate: false
+  xy: 1022, 20
+  size: 508, 1079
+  orig: 800, 1150
+  offset: 143, 34
+  index: 4
+talk.right
+  rotate: false
+  xy: 2687, 3
+  size: 508, 1101
+  orig: 800, 1150
+  offset: 143, 34
+  index: 5
+walk.right
+  rotate: false
+  xy: 2042, 1106
+  size: 664, 1100
+  orig: 800, 1150
+  offset: 67, 33
+  index: 0
+walk.right
+  rotate: false
+  xy: 2042, 2
+  size: 643, 1102
+  orig: 800, 1150
+  offset: 94, 31
+  index: 3
+walk.right
+  rotate: false
+  xy: 2708, 1106
+  size: 509, 1100
+  orig: 800, 1150
+  offset: 146, 33
+  index: 4
+walk.right
+  rotate: false
+  xy: 3197, 5
+  size: 488, 1099
+  orig: 800, 1150
+  offset: 156, 34
+  index: 2
+walk.right
+  rotate: false
+  xy: 3219, 1106
+  size: 384, 1100
+  orig: 800, 1150
+  offset: 196, 33
+  index: 1

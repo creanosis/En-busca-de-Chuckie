@@ -1,0 +1,27 @@
+
+laverne.png
+size: 116, 87
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+stand.left
+  rotate: false
+  xy: 2, 2
+  size: 36, 83
+  orig: 36, 83
+  offset: 0, 0
+  index: 0
+talk.left
+  rotate: false
+  xy: 40, 2
+  size: 36, 83
+  orig: 36, 83
+  offset: 0, 0
+  index: 0
+talk.left
+  rotate: false
+  xy: 78, 2
+  size: 36, 83
+  orig: 36, 83
+  offset: 0, 0
+  index: 1

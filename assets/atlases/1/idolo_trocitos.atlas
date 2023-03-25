@@ -1,0 +1,13 @@
+
+idolo_trocitos.png
+size: 120, 52
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+idolo_trocitos
+  rotate: false
+  xy: 2, 2
+  size: 116, 48
+  orig: 121, 63
+  offset: 2, 6
+  index: -1

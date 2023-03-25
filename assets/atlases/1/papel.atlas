@@ -1,0 +1,41 @@
+
+papel.png
+size: 3455, 2004
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+fondo_papel
+  rotate: false
+  xy: 2, 922
+  size: 1920, 1080
+  orig: 1920, 1080
+  offset: 0, 0
+  index: -1
+papel
+  rotate: false
+  xy: 1924, 935
+  size: 1529, 1067
+  orig: 1529, 1177
+  offset: 0, 110
+  index: -1
+pista
+  rotate: false
+  xy: 1337, 840
+  size: 338, 80
+  orig: 338, 80
+  offset: 0, 0
+  index: -1
+texto1
+  rotate: false
+  xy: 1924, 2
+  size: 1327, 931
+  orig: 1327, 931
+  offset: 0, 0
+  index: -1
+texto2
+  rotate: false
+  xy: 2, 3
+  size: 1333, 917
+  orig: 1333, 917
+  offset: 0, 0
+  index: -1

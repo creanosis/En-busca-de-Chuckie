@@ -1,0 +1,118 @@
+
+guy_mayor.png
+size: 2799, 1485
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+stand.right
+  rotate: false
+  xy: 1004, 755
+  size: 357, 728
+  orig: 800, 878
+  offset: 221, 0
+  index: -1
+talk.backright
+  rotate: false
+  xy: 1363, 743
+  size: 357, 740
+  orig: 800, 878
+  offset: 221, 0
+  index: -1
+talk_backright
+  rotate: false
+  xy: 1363, 743
+  size: 357, 740
+  orig: 800, 878
+  offset: 221, 0
+  index: -1
+talk.frontright
+  rotate: false
+  xy: 2, 726
+  size: 485, 757
+  orig: 800, 878
+  offset: 118, 0
+  index: -1
+talk.right
+  rotate: false
+  xy: 1722, 752
+  size: 357, 731
+  orig: 800, 878
+  offset: 221, 0
+  index: 0
+talk.right
+  rotate: false
+  xy: 2081, 755
+  size: 357, 728
+  orig: 800, 878
+  offset: 221, 0
+  index: 3
+talk.right
+  rotate: false
+  xy: 2440, 755
+  size: 357, 728
+  orig: 800, 878
+  offset: 221, 0
+  index: 5
+talk.right
+  rotate: false
+  xy: 490, 40
+  size: 357, 727
+  orig: 800, 878
+  offset: 221, 0
+  index: 2
+talk.right
+  rotate: false
+  xy: 849, 28
+  size: 357, 725
+  orig: 800, 878
+  offset: 221, 0
+  index: 1
+talk.right
+  rotate: false
+  xy: 1208, 18
+  size: 357, 723
+  orig: 800, 878
+  offset: 221, 0
+  index: 4
+walk.right
+  rotate: false
+  xy: 489, 769
+  size: 513, 714
+  orig: 800, 878
+  offset: 112, 0
+  index: 2
+walk.right
+  rotate: false
+  xy: 2, 2
+  size: 486, 722
+  orig: 800, 878
+  offset: 133, 6
+  index: 5
+walk.right
+  rotate: false
+  xy: 1567, 13
+  size: 325, 728
+  orig: 800, 878
+  offset: 190, 0
+  index: 0
+walk.right
+  rotate: false
+  xy: 1894, 16
+  size: 296, 734
+  orig: 800, 878
+  offset: 212, 0
+  index: 4
+walk.right
+  rotate: false
+  xy: 2192, 25
+  size: 294, 728
+  orig: 800, 878
+  offset: 221, 0
+  index: 1
+walk.right
+  rotate: false
+  xy: 2488, 20
+  size: 281, 733
+  orig: 800, 878
+  offset: 227, 0
+  index: 3

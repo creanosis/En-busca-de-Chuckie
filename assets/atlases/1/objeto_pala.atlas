@@ -1,0 +1,20 @@
+
+objeto_pala.png
+size: 171, 269
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+pala_fondo
+  rotate: false
+  xy: 2, 2
+  size: 116, 265
+  orig: 116, 265
+  offset: 0, 0
+  index: -1
+pala_objeto
+  rotate: false
+  xy: 120, 158
+  size: 49, 109
+  orig: 72, 112
+  offset: 12, 1
+  index: -1

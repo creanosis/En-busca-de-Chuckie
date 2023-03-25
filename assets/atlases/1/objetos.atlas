@@ -1,0 +1,62 @@
+
+objetos.png
+size: 563, 174
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+cono1
+  rotate: false
+  xy: 2, 2
+  size: 124, 170
+  orig: 124, 170
+  offset: 0, 0
+  index: -1
+grog
+  rotate: false
+  xy: 530, 89
+  size: 31, 83
+  orig: 31, 83
+  offset: 0, 0
+  index: -1
+idoloamarillo
+  rotate: false
+  xy: 368, 31
+  size: 83, 141
+  orig: 83, 141
+  offset: 0, 0
+  index: -1
+idolomorado
+  rotate: false
+  xy: 453, 34
+  size: 75, 138
+  orig: 75, 138
+  offset: 0, 0
+  index: -1
+idoloverde
+  rotate: false
+  xy: 273, 27
+  size: 93, 145
+  orig: 93, 145
+  offset: 0, 0
+  index: -1
+moneda
+  rotate: false
+  xy: 530, 78
+  size: 19, 9
+  orig: 19, 9
+  offset: 0, 0
+  index: -1
+mono
+  rotate: false
+  xy: 128, 45
+  size: 143, 127
+  orig: 166, 147
+  offset: 13, 13
+  index: -1
+papel
+  rotate: false
+  xy: 128, 14
+  size: 34, 29
+  orig: 34, 29
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,42 @@
+apply plugin: 'java'
+apply plugin: 'application'
+  
+sourceCompatibility = 1.7
+targetCompatibility=1.7
+
+
+sourceSets.main.resources.srcDirs += [ rootProject.file('assets').absolutePath ]
+mainClassName = "com.bladecoder.engine.DesktopLauncher"
+
+dependencies {
+    implementation project(":core")
+    implementation "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
+    implementation "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+    implementation "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
+    implementation "com.badlogicgames.gdx-controllers:gdx-controllers-desktop:$gdxControllersVersion"    
+}
+
+run {
+    standardInput = System.in
+    ignoreExitValue = true
+    
+    if (project.hasProperty("appArgs") ) {  
+        args Eval.me(appArgs)  
+    }     
+}
+
+
+task dist(type: Jar) {
+    baseName =  appName + "-desktop"
+    
+    from files(sourceSets.main.output.classesDirs)
+    from files(sourceSets.main.output.resourcesDir)
+    from {configurations.runtimeClasspath.collect {zipTree(it)}}
+ 
+    manifest {
+        attributes 'Main-Class': project.mainClassName
+    }
+}
+
+dist.dependsOn classes
+dist.dependsOn ':core:jar'

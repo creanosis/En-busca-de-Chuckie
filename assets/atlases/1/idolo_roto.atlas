@@ -1,0 +1,13 @@
+
+idolo_roto.png
+size: 124, 67
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+idolo_naranja
+  rotate: false
+  xy: 2, 2
+  size: 120, 63
+  orig: 121, 63
+  offset: 1, 0
+  index: -1

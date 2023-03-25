@@ -1,0 +1,76 @@
+
+tarjeta.png
+size: 3335, 1244
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+tarjeta_stella1_big
+  rotate: false
+  xy: 2, 623
+  size: 1109, 619
+  orig: 1920, 1080
+  offset: 383, 229
+  index: -1
+tarjeta_stella1_desaparecen
+  rotate: false
+  xy: 2224, 453
+  size: 300, 168
+  orig: 300, 168
+  offset: 0, 0
+  index: -1
+tarjeta_stella2_alfas
+  rotate: false
+  xy: 2224, 283
+  size: 300, 168
+  orig: 300, 168
+  offset: 0, 0
+  index: -1
+tarjeta_stella2_big
+  rotate: false
+  xy: 2, 2
+  size: 1109, 619
+  orig: 1920, 1080
+  offset: 383, 229
+  index: -1
+tarjeta_stella3_big
+  rotate: false
+  xy: 1113, 623
+  size: 1109, 619
+  orig: 1920, 1080
+  offset: 383, 229
+  index: -1
+tarjeta_stella3_libres
+  rotate: false
+  xy: 2526, 453
+  size: 300, 168
+  orig: 300, 168
+  offset: 0, 0
+  index: -1
+tarjeta_stella4_big_clavo
+  rotate: false
+  xy: 1113, 2
+  size: 1109, 619
+  orig: 1920, 1080
+  offset: 383, 229
+  index: -1
+tarjeta_stella4_empujar
+  rotate: false
+  xy: 2224, 113
+  size: 300, 168
+  orig: 300, 168
+  offset: 0, 0
+  index: -1
+tarjeta_stella4_empujar_big
+  rotate: false
+  xy: 2224, 623
+  size: 1109, 619
+  orig: 1920, 1080
+  offset: 383, 229
+  index: -1
+tarjeta_stella4_empujar_solo_clavo
+  rotate: false
+  xy: 2526, 283
+  size: 300, 168
+  orig: 300, 168
+  offset: 0, 0
+  index: -1

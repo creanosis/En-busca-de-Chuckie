@@ -1,0 +1,20 @@
+
+cajas_tapa.png
+size: 392, 239
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+caja_tapa_toda_abierta
+  rotate: false
+  xy: 2, 2
+  size: 193, 235
+  orig: 199, 236
+  offset: 0, 0
+  index: -1
+caja_tapa_toda_abierta_ojos
+  rotate: false
+  xy: 197, 2
+  size: 193, 235
+  orig: 199, 236
+  offset: 0, 0
+  index: -1
